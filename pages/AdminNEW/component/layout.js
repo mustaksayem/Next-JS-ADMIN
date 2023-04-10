@@ -17,6 +17,9 @@ export default function MyLayout(props)
         <Link href="/AdminNEW/getallCustomer">View All Customer</Link><br></br>
         
         <Link href="/AdminNEW/Allproduct">All Product</Link><br></br>
+        <Link href="/AdminNEW/viewSingleProduct">view Single Product</Link><br></br>
+        {/* <Link href="/AdminNEW/searchProduct">Search Product</Link><br></br> */}
+        <Link href="/AdminNEW/searchProductById">Search Product By ID</Link><br></br>
         <Link href="/AdminNEW/deleteProduct">Delete Product</Link><br></br>
 
 

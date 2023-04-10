@@ -9,8 +9,10 @@ export default function GetUsers({ data }) {
       <h1>Agency Profile</h1>
 
       <h3>Name : {data.Name}</h3>
-      <h3>Email : {data.Email}</h3>
-      <h3>location: {data.location}</h3>
+      <h3>Price : {data.Price}</h3>
+      <h3>Category: {data.Category}</h3>
+      <h3>Description : {data.Description}</h3>
+      {/* <h3>Category: {data.Category}</h3> */}
     
     </>
   );
@@ -18,8 +20,10 @@ export default function GetUsers({ data }) {
 
 export async function getServerSideProps() {
   const response = await axios.get(
-    "http://localhost:3000/Admin/getAdminById/1"
+  
+    "http://localhost:3000/Admin/searchProductById/2"
   );
   const data = await response.data;
   return { props: { data } };
 }
+
